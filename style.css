@@ -1,0 +1,108 @@
+:root {
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgba(0, 0, 0 / 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Work Sans", sans-serif;
+    min-height: 2000px;
+}
+
+.hero {
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.hero h1 {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 6rem;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1.5rem ;
+}
+
+.hero a {
+    color: var(--pink);
+    background-color: white;
+}
+
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+
+/* Countdown Custom Styling */
+.simply-countdown {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    font-family: "Work Sans", sans-serif;
+    margin: 2rem 0;
+}
+
+.simply-countdown > .simply-section {
+    width: 75px;
+    height: 75px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--pink);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.simply-countdown > .simply-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(241, 78, 149, 0.5);
+}
+
+.simply-countdown > .simply-section > div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    align-items: center;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+}
+
+.simply-countdown > .simply-section .simply-word {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--pink);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+    .simply-countdown > .simply-section {
+        width: 85px;
+        height: 85px;
+    }
+    
+    .simply-countdown > .simply-section .simply-amount {
+        font-size: 2rem;
+    }
+    
+    .simply-countdown > .simply-section .simply-word {
+        font-size: 0.8rem;
+    }
+}
