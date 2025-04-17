@@ -21,6 +21,9 @@
     <!-- Add the simplyCountdown.js script -->
     <script src="countdown/simplyCountdown.umd.js"></script>
 
+    <!-- icon boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,12 +33,94 @@
         class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
         <main>
             <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
-            <h1>Acang & Fadhilah</h1>
-            <p>Akan Melangsungkan resepsi Pernikahan dalam :</p>
+            <h1>Fulan & Fulanah </h1>
+            <p>Akan melangsungkan resepsi pernikahan dalam :</p>
             <div class="simply-countdown"></div>
             <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
         </main>
     </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">Wedding Invitation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Wedding</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#info">Info</a>
+                    <a class="nav-link" href="#story">Story</a>
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                    <a class="nav-link" href="#rsvp">RSVP</a>
+                    <a class="nav-link" href="#gift">Gift</a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home" class="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center" >
+                    <h2 class="wedding-title">Acara Pernikahan</h2>
+                    <h4 class="wedding-text" >Diselenggrakan pada Minggu 20 April 2025 di Sumbawa, Kabupaten Sumbawa.</h4>
+                    <p class="wedding-subtext">Oleh karena itu, dengan segala hormat,kami bermaksud untuk mengundang Bapak/Ibu,Saudara/i, 
+                        untuk hadir pada acara pernikahan kami :</p>
+                </div>
+            </div>
+
+            <div class="row couple">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-8 text-end">
+                            <h3>Fulan bin Fulan</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, fugit! Veniam distinctio dolor architecto repellendus reprehenderit, unde labore dignissimos minima repudiandae ut. Placeat illum, nobis omnis voluptas magni error similique.</p>
+                            <p>Putra dari Bapak fulan <br> dan <br>Ibu fulanah</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/image_fulan.png" alt="fulan" class="img-responsive rounded-circle">
+                        </div>
+                    </div>
+                </div>
+                <span class="heart"><i class="bi bi-calendar-heart-fill"></i></span>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/image_fulanah.png" alt="fulanah" class="img-responsive rounded-circle">
+                        </div>
+                        <div class="col-8">
+                            <h3>Fulanah binti Fulanah</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, fugit! Veniam distinctio dolor architecto repellendus reprehenderit, unde labore dignissimos minima repudiandae ut. Placeat illum, nobis omnis voluptas magni error similique.</p>
+                            <p>Putra dari Bapak fulan <br> dan <br>Ibu fulanah</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+      </section>
+
+      <section id="info" class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-10 text-center">
+                    <h2>Informasi Acara</h2>
+                    <p class="alamat">Taman Kerato <br> Kerato, Kec. Unter Iwes, Kabupaten Sumbawa, Nusa Tenggara Bar. 84316</p>
+                    <a href="https://maps.app.goo.gl/3Lg8yrqn9FFo7F6u9" target="_blank" class="btn btn-light btn-sm">Klik Untuk Membuka Lokasi</a>
+                    <p class="desc">Diharapkan untuk tidak salah alamat dan tanggal. Manakla anda tiba di lokasi namun ternyat tidak ada tnad tanda maka bisa ajdi anda salh tanggal atau tempat.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
@@ -78,7 +163,7 @@
             onEnd: function () {
 
                 document.querySelector('.simply-countdown').innerHTML =
-                    '<div class="alert alert-light p-3 mt-3">Acara sedang berlangsung!</div>';
+                    '<div class="alert alert-light p-4 mt-3">Acara sedang berlangsung!</div>';
             }
         });
 
